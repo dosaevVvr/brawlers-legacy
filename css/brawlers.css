@@ -209,23 +209,6 @@ main{
   }
 }
 
-@media only screen and (max-width: 735px){
-  main{
-    margin: 40px 8px;
-    padding: 24px;
-  }
-  .card{
-    gap: 5px;
-    width: 180px;
-    align-items: center;
-  }
-  .card-title{
-    font-size: 16px;
-  }
-  .card-body{
-    padding: 4px;
-  }
-}
 
 .navbar-toggler-icon{
   background-color: #2d2636;
