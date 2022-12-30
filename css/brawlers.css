@@ -14,10 +14,10 @@ body {
   
 }
 .footer {
-  padding:17px 0 0 0;
+  padding: 13px 0 0 0;
   color:#4b4c4d;
   margin-bottom: 0;
-  background-color: #170f1f;
+  background-color: #1c1722;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   height: 100%;
@@ -26,7 +26,7 @@ body {
   padding:0;
   list-style:none;
   text-align:center;
-  font-size:18px;
+  font-size:21px;
   line-height:1.6;
   margin-bottom:0;}
 .footer li {
@@ -38,25 +38,29 @@ body {
   opacity:0.8;
 }
 .footer ul a:hover {
-  opacity:1;
+  color: #8e8a94;
+  transition: all 0.6s;
 }
 .footer .social {
   text-align:center;
-  margin-top: 10px
+  margin: 10px
 }
 .footer .social a {
-  font-size:33px;
+  font-size:23px;
   width:55px;
   height:55px;
   line-height:40px;
   display:inline-block;
   text-align:center;
   margin:0 1px;
-  color: inherit;
+  color: #4b4c4d;
   opacity:1;
+  background-color: #3d3e3f;
+  border-radius: 6px;
 }
 .footer .social > a:hover {
-  opacity:0.6;
+  opacity:0.5;
+  transition: all 0.4s;
 }
 .footer .copyright {
   margin-top:10px;
@@ -160,7 +164,7 @@ INPUT[type="search"]:focus{
   border-radius: 0px 28% 12px 12px;
 }
 
-.wraper{
+.wrapper{
   display: flex;
   justify-content: center;
 }
@@ -176,14 +180,37 @@ main{
   max-width: 950px;
 }
 
+.page-name{
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(4x) saturate(78%);
+  -webkit-backdrop-filter: blur(7px) saturate(78%);
+  background-color: rgba(17, 25, 40, 0.66);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  position: absolute;
+  display: flex;
+  text-align: left;
+  max-width: 950px;
+}
+
+.page-name a{
+  margin: 0 10px;
+}
+.page-name p{
+  color: #00c3ff;
+  margin: 0;
+}
+
 @media only screen and (max-width: 490px){
   main{
-    margin: 40px 8px;
-    padding: 24px;
+    margin: 102px 8px 85px;
+    padding: 10px;
   }
   .card{
     gap: 5px;
-    width: 50px;
+    width: 67px;
     align-items: center;
   }
   .card-title{
