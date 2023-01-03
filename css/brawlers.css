@@ -104,7 +104,7 @@ body {
 }
 
 .navbar-brand{
-  color: #7777af;
+  color: #7070b1;
 }
 
 .navbar-brand:hover{
@@ -210,7 +210,7 @@ main{
   }
   .card{
     gap: 5px;
-    width: 67px;
+    width: 97px;
     align-items: center;
   }
   .card-title{
