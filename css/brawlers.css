@@ -192,11 +192,12 @@ main{
   position: absolute;
   display: flex;
   text-align: left;
-  max-width: 950px;
 }
 
 .page-name a{
   margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
 }
 .page-name p{
   color: #00c3ff;
