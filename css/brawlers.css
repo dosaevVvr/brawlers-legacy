@@ -202,6 +202,12 @@ INPUT[type="search"]:focus {
 
 .wrapper {
   display: flex;
+  justify-content: flex-start;
+}
+
+.cntr-pg{
+  display: flex;
+  padding: 0;
   justify-content: center;
 }
 
@@ -218,6 +224,7 @@ main {
 
 .page-name {
   padding: 20px;
+  margin-left: 98px;
   margin-top: 20px;
   margin-bottom: 10px;
   backdrop-filter: blur(4x) saturate(78%);
@@ -273,6 +280,9 @@ main {
     margin: 102px 8px 85px;
     padding: 15px;
     transition: all 0.4s;
+  }
+  .page-name{
+    margin-left: 8px;
   }
 }
 
