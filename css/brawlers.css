@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
-*, ::after, ::before{
-  font-family: 'Secular One', sans-serif;
+*,
+::after,
+::before {
+  font-family: "Secular One", sans-serif;
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
   background-color: #282230;
   height: 100vh;
   width: 100%;
-  
 }
 .footer {
   padding: 13px 0 7px 0;
-  color:#4b4c4d;
+  color: #4b4c4d;
   margin-bottom: 0;
   background-color: #1c1722;
   border-radius: 12px;
@@ -23,19 +24,20 @@ body {
   height: 100%;
 }
 .footer ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:21px;
-  line-height:1.6;
-  margin-bottom:0;}
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 21px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
 .footer li {
-  padding:0 10px;
+  padding: 0 10px;
 }
 .footer ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
   transition: all 0.6s;
 }
 .footer ul a:hover {
@@ -43,18 +45,18 @@ body {
   transition: all 0.6s;
 }
 .footer .social {
-  text-align:center;
-  margin: 10px
+  text-align: center;
+  margin: 10px;
 }
 .footer .social svg {
-  font-size:23px;
-  width:38px;
-  height:38px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  margin:0 1px;
-  opacity:1;
+  font-size: 23px;
+  width: 38px;
+  height: 38px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 1px;
+  opacity: 1;
   background-color: #393a3b;
   border-radius: 6px;
   transition: all 0.4s;
@@ -65,20 +67,20 @@ body {
   transition: all 0.4s;
 }
 .footer .copyright {
-  margin-top:0 0 5px 0;
-  text-align:center;
-  font-size:16px;
-  color:#aaa;
-  margin-bottom:0;
+  margin-top: 0 0 5px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 0;
 }
-  
-.copyrr{
+
+.copyrr {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
-.navbar{
+.navbar {
   backdrop-filter: blur(4px) saturate(78%);
   -webkit-backdrop-filter: blur(4px) saturate(78%);
   background-color: rgba(33, 30, 36, 0.82);
@@ -86,82 +88,101 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-
-
 @keyframes ani {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+    transition: all 1s;
+  }
+  50% {
+    transform: translateX(1009px);
+    opacity: 0.5;
+    transition: all 0.8s;
+  }
+  100% {
+    opacity: 1;
+    transition: all 0.5s;
+    transform: translateX(999px);
+  }
 }
 
+.dropdown-menu:hover {
+  height: 100%;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  width: 30%;
+}
 
-
-.dropdown-menu{
-  background-color: #1e1c20;
+.dropdown-menu {
+  background-color: #1f1c22;
   transition: all 0.45s;
   opacity: 0;
   animation: ani 1s forwards;
+  position: absolute;
+  margin: auto auto auto -999px;
 }
 
-.dropdown-menu li a:hover{
+.dropdown-menu li a:hover {
   background-color: #37313d;
   color: #366391;
   transition: all 0.59s;
 }
 
-.dropdown-menu li a{
+.dropdown-menu li a {
   color: #545f69;
   transition: all 0.6s;
 }
 
-.nav-link{
+.nav-link {
   color: #5c4b5c;
 }
 
-.navbar-brand{
+.navbar-brand {
   color: #7070b1;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: #a4a4e0;
   transition: all 0.6s;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
   color: #8e8a94;
   transition: all 0.6s;
 }
 
-INPUT[type="search"]{
+INPUT[type="search"] {
   background-color: #2e343f;
   border: none;
 }
 
-INPUT[type="search"]:active{
+INPUT[type="search"]:active {
   background-color: #5f5c80;
   border: #5858a5 5px double;
 }
 
-INPUT[type="search"]:focus{
+INPUT[type="search"]:focus {
   background-color: #5f5c80;
   border: #5858a5 5px double;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   background-color: #2e343f;
 }
 
-.card{
+.card {
   background-color: #2c2436;
   border-radius: 12px 12px 12px;
-  border: #545f69 1px solid;
   margin-top: 1rem;
   display: flex;
-  min-width: 80px;
+  width: 185px;
   cursor: pointer;
-  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  transition: all 0.44s;
 }
 
-.cards{
+.cards {
   display: flex;
   min-width: 9rem;
   flex-wrap: wrap;
@@ -169,23 +190,22 @@ INPUT[type="search"]:focus{
   gap: 25px;
 }
 
-.card img{
+.card img {
   border-radius: 12px;
   max-width: 185px;
-  min-width: 80px;
 }
 
-.card-body{
+.card-body {
   background-color: #282230;
   border-radius: 0px 28% 12px 12px;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: center;
 }
 
-main{
+main {
   padding: 20px;
   margin: 102px;
   backdrop-filter: blur(4x) saturate(78%);
@@ -196,7 +216,7 @@ main{
   max-width: 950px;
 }
 
-.page-name{
+.page-name {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -210,60 +230,85 @@ main{
   text-align: left;
 }
 
-.page-name a{
+.page-name a {
   margin: 0 10px;
   text-decoration: none;
   font-size: 18px;
 }
-.page-name p{
+.page-name p {
   color: #00c3ff;
   margin: 0;
 }
 
-@media only screen and (max-width: 490px){
-  main{
+@media screen and (max-width: 526px) {
+  main {
     margin: 102px 8px 85px;
     padding: 10px;
+    transition: all 0.4s;
   }
-  .card{
+  .card {
+    width: 110px;
+    gap: 10px;
+    transition: all 0.4s;
+  }
+  .card-title {
+    font-size: 15px;
+    transition: all 0.4s;
+  }
+  .card-body {
+    padding: 4px;
+    transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .card {
+    width: 135px;
+    transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  main {
+    margin: 102px 8px 85px;
+    padding: 15px;
+    transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  main {
+    margin: 102px 8px 85px;
+    padding: 10px;
+    transition: all 0.4s;
+  }
+  .card {
     gap: 5px;
     width: 97px;
     align-items: center;
+    transition: all 0.4s;
   }
-  .card-title{
+  .card-title {
     font-size: 14px;
+    transition: all 0.4s;
   }
-  .card-body{
+  .card-body {
     padding: 4px;
+    transition: all 0.4s;
   }
-
 }
 
-
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   background-color: #2d2636;
 }
 
-.card:hover{
+.card:hover {
   z-index: 3;
-  border-color: #b0b0e9;
+  border-color: #8f8fff;
   scale: 1.04;
   transition: all 0.44s;
 }
 
-.card-title{
+.card-title {
   color: #5b4b70;
-}
-
-
-@keyframes scroll {
-  100%{
-   background-position:0px -3000px;
- }
-}
-
-@media (prefers-reduced-motion) {
- body {
-   animation: scroll 200s linear infinite;
- }
 }
