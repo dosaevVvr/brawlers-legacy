@@ -4,7 +4,6 @@
 ::after,
 ::before {
   font-family: "Secular One", sans-serif;
-  box-sizing: border-box;
   margin: 0;
 }
 
@@ -13,22 +12,21 @@ body {
   background-color: #282230;
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-content: space-between;
 }
+
 .footer {
+  margin-top: auto;
   padding: 13px 0 7px 0;
   color: #4b4c4d;
-  margin-bottom: 0;
   background-color: #1c1722;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  max-height: 100%;
-}
-.footer.fixed-bottom{
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  position: relative;
 }
 .footer ul {
   padding: 0;
@@ -37,6 +35,7 @@ body {
   font-size: 21px;
   line-height: 1.6;
   margin-bottom: 0;
+  justify-content: center;
 }
 .footer li {
   padding: 0 10px;
@@ -48,7 +47,7 @@ body {
   transition: all 0.6s;
 }
 .footer ul a:hover {
-  color: #8e8a94;
+  color: #83b8db;
   transition: all 0.6s;
 }
 .footer .social {
@@ -69,7 +68,7 @@ body {
   transition: all 0.4s;
 }
 .footer .social svg:hover {
-  background-color: #5a5d5f;
+  background-color: #83b8db;
   scale: 1.05;
   transition: all 0.4s;
 }
@@ -128,11 +127,12 @@ body {
   animation: ani 1s forwards;
   position: absolute;
   margin: auto auto auto -999px;
+  z-index: 99;
 }
 
 .dropdown-menu li a:hover {
   background-color: #37313d;
-  color: #366391;
+  color: #83b8db;
   transition: all 0.59s;
 }
 
@@ -150,12 +150,12 @@ body {
 }
 
 .navbar-brand:hover {
-  color: #a4a4e0;
+  color: #83b8db;
   transition: all 0.6s;
 }
 
 .nav-item a:hover {
-  color: #8e8a94;
+  color: #83b8db;
   transition: all 0.6s;
 }
 
@@ -216,11 +216,12 @@ INPUT[type="search"]:focus {
   display: flex;
   padding: 0;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 main {
   padding: 20px;
-  margin: 102px;
+  margin: 102px auto auto auto;
   backdrop-filter: blur(4x) saturate(78%);
   -webkit-backdrop-filter: blur(7px) saturate(78%);
   background-color: rgba(17, 25, 40, 0.66);
@@ -234,14 +235,13 @@ main {
   margin-left: 98px;
   margin-top: 20px;
   margin-bottom: 10px;
-  backdrop-filter: blur(4x) saturate(78%);
-  -webkit-backdrop-filter: blur(7px) saturate(78%);
-  background-color: rgba(17, 25, 40, 0.66);
+  background-color: #181B2A;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   position: absolute;
   display: flex;
   text-align: left;
+  z-index: 1;
 }
 
 .page-name a {
