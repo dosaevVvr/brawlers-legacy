@@ -322,6 +322,9 @@ main {
     padding: 4px;
     transition: all 0.4s;
   }
+  body{
+    background-image: url(/background-4.jpg);
+  }
 }
 
 .navbar-toggler-icon {
