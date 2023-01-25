@@ -5,12 +5,11 @@
 ::before {
   font-family: "Secular One", sans-serif;
   margin: 0;
-  color: #e3e9ff;
 }
 
 body {
   font-family: "Secular One", sans-serif;
-  background-image: url("https://i.pinimg.com/originals/ec/eb/79/eceb7990b39fa62d4189f57f2076712f.png");
+  background-image: url(/background-2.png);
   background-position: top;
   height: 100vh;
   width: 100%;
@@ -50,9 +49,10 @@ body {
   text-decoration: none;
   opacity: 0.8;
   transition: all 0.6s;
+  color: #e3e9ff;
 }
 .footer ul a:hover {
-  color: #83b8db;
+  color: #2368ff;
   transition: all 0.6s;
 }
 .footer .social {
