@@ -283,12 +283,30 @@ main {
     padding: 4px;
     transition: all 0.4s;
   }
+  body {
+    font-family: "Secular One", sans-serif;
+    background-image: url(/background-2.png);
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+  }
 }
 
 @media screen and (max-width: 682px) {
   .card {
     width: 135px;
     transition: all 0.4s;
+  }
+  body {
+    font-family: "Secular One", sans-serif;
+    background-image: url(/background-2.png);
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
   }
 }
 
@@ -300,6 +318,15 @@ main {
   }
   .page-name{
     margin-left: 8px;
+  }
+  body {
+    font-family: "Secular One", sans-serif;
+    background-image: url(/background-2.png);
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
   }
 }
 
@@ -322,6 +349,15 @@ main {
   .card-body {
     padding: 4px;
     transition: all 0.4s;
+  }
+  body {
+    font-family: "Secular One", sans-serif;
+    background-image: url(/background-2.png);
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
   }
 }
 
