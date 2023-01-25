@@ -128,7 +128,7 @@ body {
   opacity: 0;
   animation: ani 1s forwards;
   position: absolute;
-  margin: auto auto auto -999px;
+  margin: auto auto auto -998px;
   z-index: 99;
 }
 
