@@ -10,7 +10,7 @@
 
 body {
   font-family: "Secular One", sans-serif;
-  background-image: url("/background-2.png");
+  background-image: url("background-2.png");
   background-position: top;
   height: 100vh;
   width: 100%;
