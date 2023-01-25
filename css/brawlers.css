@@ -5,11 +5,13 @@
 ::before {
   font-family: "Secular One", sans-serif;
   margin: 0;
+  color: #e3e9ff;
 }
 
 body {
   font-family: "Secular One", sans-serif;
-  background-color: #282230;
+  background-image: url("/background-2.png");
+  background-position: top;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -20,9 +22,12 @@ body {
   margin-top: auto;
   padding: 13px 0 7px 0;
   color: #4b4c4d;
-  background-color: #1c1722;
+  backdrop-filter: blur(8px) saturate(200%);
+  -webkit-backdrop-filter: blur(8px) saturate(200%);
+  background-color: rgba(90, 185, 234, 0.80);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -63,7 +68,7 @@ body {
   text-align: center;
   margin: 0 1px;
   opacity: 1;
-  background-color: #393a3b;
+  background-color: #add6ff;
   border-radius: 6px;
   transition: all 0.4s;
 }
@@ -76,7 +81,7 @@ body {
   margin-top: 0 0 5px 0;
   text-align: center;
   font-size: 16px;
-  color: #aaa;
+  color: rgb(56, 129, 240);
   margin-bottom: 0;
 }
 
@@ -87,9 +92,9 @@ body {
 }
 
 .navbar {
-  backdrop-filter: blur(4px) saturate(78%);
-  -webkit-backdrop-filter: blur(4px) saturate(78%);
-  background-color: rgba(33, 30, 36, 0.82);
+  backdrop-filter: blur(8px) saturate(200%);
+  -webkit-backdrop-filter: blur(8px) saturate(200%);
+  background-color: rgba(90, 185, 234, 0.80);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -111,9 +116,6 @@ body {
   }
 }
 
-.dropdown-menu:hover {
-  height: 100%;
-}
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
@@ -137,55 +139,58 @@ body {
 }
 
 .dropdown-menu li a {
-  color: #545f69;
+  color: #e3e9ff;
   transition: all 0.6s;
 }
 
 .nav-link {
-  color: #5c4b5c;
+  color: #e3e9ff;
 }
 
 .navbar-brand {
-  color: #7070b1;
+  color: #e3e9ff;
+  transition: all 0.6s;
 }
 
 .navbar-brand:hover {
-  color: #83b8db;
+  color: #7b78fa;
   transition: all 0.6s;
 }
 
 .nav-item a:hover {
-  color: #83b8db;
+  color: #7b78fa;
   transition: all 0.6s;
 }
 
 INPUT[type="search"] {
-  background-color: #2e343f;
+  background-color: #c79cff;
   border: none;
+  transition: all 0.4s;
+  color: #5d5be0;
 }
 
 INPUT[type="search"]:active {
-  background-color: #5f5c80;
-  border: #5858a5 5px double;
+  background-color: #c79cff;
+  transition: all 0.4s;
 }
 
 INPUT[type="search"]:focus {
-  background-color: #5f5c80;
-  border: #5858a5 5px double;
+  background-color: #decdff;
+  transition: all 0.4s;
 }
 
 .navbar-toggler {
-  background-color: #2e343f;
+  background-color: #c79cff;
 }
 
 .card {
-  background-color: #2c2436;
+  background-color: #c79cff;
   border-radius: 12px 12px 12px;
+  border: none;
   margin-top: 1rem;
   display: flex;
   width: 185px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   transition: all 0.44s;
 }
 
@@ -203,8 +208,9 @@ INPUT[type="search"]:focus {
 }
 
 .card-body {
-  background-color: #282230;
+  background-color: #c79cff;
   border-radius: 0px 28% 12px 12px;
+  color: #e3e9ff;
 }
 
 .wrapper {
@@ -222,22 +228,26 @@ INPUT[type="search"]:focus {
 main {
   padding: 20px;
   margin: 102px auto auto auto;
-  backdrop-filter: blur(4x) saturate(78%);
-  -webkit-backdrop-filter: blur(7px) saturate(78%);
-  background-color: rgba(17, 25, 40, 0.66);
+  backdrop-filter: blur(8px) saturate(200%);
+  -webkit-backdrop-filter: blur(8px) saturate(200%);
+  background-color: rgba(90, 185, 234, 0.80);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   max-width: 950px;
 }
+        
 
 .page-name {
   padding: 20px;
   margin-left: 98px;
   margin-top: 20px;
   margin-bottom: 10px;
-  background-color: #181B2A;
+  backdrop-filter: blur(8px) saturate(200%);
+  -webkit-backdrop-filter: blur(8px) saturate(200%);
+  background-color: rgba(90, 185, 234, 0.80);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 12px;
   position: absolute;
   display: flex;
   text-align: left;
@@ -250,7 +260,7 @@ main {
   font-size: 18px;
 }
 .page-name p {
-  color: #00c3ff;
+  color: #4d94ff;
   margin: 0;
 }
 
@@ -321,11 +331,12 @@ main {
 
 .card:hover {
   z-index: 3;
-  border-color: #8f8fff;
   scale: 1.04;
-  transition: all 0.44s;
+  transition: all 0.34s;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 28px 23px -18px;
+
 }
 
 .card-title {
-  color: #5b4b70;
+  color: #e3e9ff;
 }
