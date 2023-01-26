@@ -9,7 +9,8 @@
 
 body {
   font-family: "Secular One", sans-serif;
-  background: url("/assets/background-2.png");
+  background-image: url("https://s1.hostingkartinok.com/uploads/images/2023/01/e4b59f39621876af33d17a42a0730b0f.jpg");
+  background-color: #a696ff;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -119,10 +120,11 @@ body {
   display: block;
   margin-top: 0;
   width: 30%;
+  z-index: 100;
 }
 
 .dropdown-menu {
-  background-color: #1f1c22;
+  background-color: #b282ff;
   transition: all 0.45s;
   opacity: 0;
   animation: ani 1s forwards;
@@ -132,8 +134,8 @@ body {
 }
 
 .dropdown-menu li a:hover {
-  background-color: #37313d;
-  color: #83b8db;
+  background-color: #a77ad4;
+  color: #5da3ff;
   transition: all 0.59s;
 }
 
@@ -182,8 +184,14 @@ INPUT[type="search"]:focus {
   background-color: #c79cff;
 }
 
+.navbar-toggler-icon {
+  color: #72b8ff;
+  background-color: #2368ff;
+}
+
+
 .card {
-  background-color: #c79cff;
+  background-color: rgb(158, 144, 238);
   border-radius: 12px 12px 12px;
   border: none;
   margin-top: 1rem;
@@ -207,7 +215,7 @@ INPUT[type="search"]:focus {
 }
 
 .card-body {
-  background-color: #c79cff;
+  background-color: #9e90ee;
   border-radius: 0px 28% 12px 12px;
   color: #e3e9ff;
 }
@@ -227,9 +235,9 @@ INPUT[type="search"]:focus {
 main {
   padding: 20px;
   margin: 102px auto auto auto;
-  backdrop-filter: blur(2px) saturate(200%);
-  -webkit-backdrop-filter: blur(2px) saturate(200%);
-  background-color: #aeaff0be;
+  backdrop-filter: blur(3px) saturate(200%);
+  -webkit-backdrop-filter: blur(3px) saturate(200%);
+  background-color: #aeaff0af;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   max-width: 950px;
@@ -327,9 +335,7 @@ main {
   }
 }
 
-.navbar-toggler-icon {
-  background-color: #2d2636;
-}
+
 
 .card:hover {
   z-index: 3;
