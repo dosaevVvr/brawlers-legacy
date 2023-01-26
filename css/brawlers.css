@@ -9,7 +9,7 @@
 
 body {
   font-family: "Secular One", sans-serif;
-  background-image: url("/assets/background-2.png");
+  background: url("/assets/background-2.png");
   height: 100vh;
   width: 100%;
   display: flex;
