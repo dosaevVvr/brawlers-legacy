@@ -331,7 +331,7 @@ main {
     transition: all 0.4s;
   }
   body{
-    background-image: url(/background-4.jpg);
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cdddf269129707.5b759213946a5.png");
   }
 }
 
