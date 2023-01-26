@@ -9,7 +9,7 @@
 
 body {
   font-family: "Secular One", sans-serif;
-  background-image: url(/background-2.png);
+  background-image: url("/assets/background-2.png");
   height: 100vh;
   width: 100%;
   display: flex;
@@ -227,9 +227,9 @@ INPUT[type="search"]:focus {
 main {
   padding: 20px;
   margin: 102px auto auto auto;
-  backdrop-filter: blur(8px) saturate(200%);
-  -webkit-backdrop-filter: blur(8px) saturate(200%);
-  background-color: rgba(90, 185, 234, 0.80);
+  backdrop-filter: blur(2px) saturate(200%);
+  -webkit-backdrop-filter: blur(2px) saturate(200%);
+  background-color: #aeaff0be;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   max-width: 950px;
